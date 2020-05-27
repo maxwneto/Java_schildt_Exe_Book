@@ -1,15 +1,16 @@
 /*
-	Add a parameterized method that computes the
-	fuel required for a given distance
+	Add a Contructor on vehicle.
 	@author: Max Wilson
-	25 May 2020
+	27 May 2020
 */
 class Vehicle{
-
-	int passengers;
-	int fuelcap;
-	int mpg;
+	int passengers, fuelcap, mpg;
 	
+	Vehicle(int p, int f,int m){
+		passengers = p;
+		fuelcap = f;
+		mpg = m;
+	}	
 	// display de range
 	int range(){
 		return fuelcap * mpg;
@@ -18,26 +19,17 @@ class Vehicle{
 	double fuelNeeded( int miles){
 		return miles / mpg;
 	}
-	
 }
 
-class CompFuel{
+class VehConsDemo{
 	public static void main(String[] args){
 	
-		Vehicle minivan = new Vehicle();
-		Vehicle sportcar = new Vehicle();
+	Vehicle minivan = new Vehicle(7,16,21);
+	Vehicle sportcar = new Vehicle(2,14,12);
 		
 		double gallons;
 		int dist = 252;
 				
-		minivan.passengers = 7;
-		minivan.fuelcap = 16;
-		minivan.mpg = 21;
-				
-		sportcar.passengers = 2;
-		sportcar.fuelcap = 14;
-		sportcar.mpg = 12;		
-		
 		gallons = minivan.fuelNeeded(dist);
 						
 		System.out.println("To go " + dist + " miles minivan needs " + gallons 
