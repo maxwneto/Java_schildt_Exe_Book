@@ -1,3 +1,8 @@
+/*
+	Demonstrate a one-dimensional array.
+	@author: Max Wilson
+	28 May 2020
+*/
 class ArrayDemo{
 	public static void main(String[] args){
 		int sample[] = new int [10];
