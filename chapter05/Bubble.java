@@ -14,25 +14,24 @@ class Bubble{
 		System.out.print("Original array is :");
 		for(int i = 0; i < size; i++)
 			System.out.print(" " + nums[i]);
-		System.out.println();
+		System.out.println("\n");
 
 		// This is the Bubble sort.
-		for(a = 1; a < size; a++){
+		for(a = 1; a < size; a++)
 			for(b = size -1; b >= a; b--)			
 				if(nums[b-1] > nums[b]){ //if out of order
 					// exchange elements
 					t = nums[b -1];
 					nums[b -1] = nums[b];
 					nums[b] = t;
-				}
-					
-			}
+				}				
 			
-			// display sorted array
-			System.out.print("Sorted array is: ");
-			for(int i = 0; i < size; i++)
-			System.out.print(" " + nums[i]);
-			System.out.println();
+		// display sorted array
+		System.out.print("Sorted array is: ");
+		for(int i = 0; i < size; i++)
+		System.out.print(" " + nums[i]);
+		
+		System.out.println();
 	}
 }
 
