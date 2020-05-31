@@ -41,6 +41,7 @@ class IrregVec{
 		for(int a = 2; a < 3; a++){	
 			for(int d = 0; d < 5; d++)
 				System.out.print(nums[a][d] + " ");
+				
 			System.out.println("\n");
 		}
 	}
