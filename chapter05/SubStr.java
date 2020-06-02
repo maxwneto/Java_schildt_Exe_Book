@@ -1,7 +1,7 @@
 /*
     Use substring.
     @author: Max Wilson
-    1 May 2020
+    1 Jun 2020
 */
 class SubStr{
     public static void main(String[] args){

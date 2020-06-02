@@ -1,7 +1,7 @@
 /*
     Use a string to control a switch statement.
     @author: Max Wilson
-    01 May 2020
+    01 Jun 2020
 */
 class StringSwitch{
     public static void main(String[] args){
