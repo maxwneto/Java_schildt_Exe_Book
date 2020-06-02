@@ -8,6 +8,7 @@ class StrOps{
 		String str1 = "When it comes to Web Programming, Java is #1.";
 		String str2 = new String(str1);
 		String str3 = "Java strings are powerfull";
+		String str4 = str1 + "\n" + str2 + "\n" + str3;
 		int result, idx;
 		char ch;
 		
@@ -43,6 +44,8 @@ class StrOps{
 		System.out.println("Index of first occurence of One: " + idx);
 		idx = str2.lastIndexOf("One");
 		System.out.println("Index of last occurence of One: " + idx);
+		
+		System.out.println(str4);
 		
 	}
 }
