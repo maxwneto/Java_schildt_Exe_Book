@@ -33,7 +33,7 @@ class DManipulatingQueue{
 	public static void main(String[] args) throws java.io.IOException{
 		ManipulatingQueue l1;
 		int size,num,i;
-		Scanner sc = new Scanner(System.in);
+		var sc = new Scanner(System.in);
 
 		System.out.print("Type the size of array: ");
 		size = sc.nextInt();
@@ -48,6 +48,8 @@ class DManipulatingQueue{
 			num = l1.get();
 			System.out.print(num + " ");
 		}
+
+		System.out.println();
 			
 	}
 }
