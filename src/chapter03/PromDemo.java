@@ -1,0 +1,19 @@
+package chapter03;
+/*
+   A promotion surprise!
+   @author Max Wilson
+   16 May 2020
+*/
+class PromDemo{
+   public static void main(String[] args){
+	byte b;
+	int i;
+
+	b = 10;
+	i = b * b;
+	b = (byte)  (b * b);
+
+	System.out.println("i and b: " + i + " " + b);
+
+   }
+}

@@ -1,0 +1,26 @@
+package chapter03;
+/*
+	Demonstrate block scope
+	Max Wilson
+	13:57 14/05/2020
+*/
+class ScopeDemo{
+	public static void main(String[] args){
+		int x;
+		
+		x = 10;
+		
+		if(x == 10){
+			int y = 20;
+			
+			System.out.println("x and y: " + x + " " + y);
+			
+		x = y * 2;
+		}
+		
+		// y = 100; //Error! y not know here.
+		
+		// x is still know here
+		System.out.println("x is : " + x);
+	}
+}
